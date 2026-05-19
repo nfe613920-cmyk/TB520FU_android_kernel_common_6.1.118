@@ -171,5 +171,5 @@ if test -n "${BUILD_NUMBER}"; then
 fi
 
 # strip -dirty suffix
-res=$(echo "$res" | sed 's/-dirty//g')
+res=$(echo "$res" | sed 's/-dirty//g; s/-maybe//g')
 echo "$res"
