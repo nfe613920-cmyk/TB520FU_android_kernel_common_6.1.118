@@ -170,4 +170,6 @@ if test -n "${BUILD_NUMBER}"; then
 	res="$res-ab${BUILD_NUMBER}"
 fi
 
+# strip -dirty suffix
+res=$(echo "$res" | sed 's/-dirty//g')
 echo "$res"
